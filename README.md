@@ -88,3 +88,10 @@ A transição para a nuvem foi estratégica e executada em etapas, respeitando o
 
 **Assinatura do Responsável pelo Projeto:**  
 Victor Hugo de Oliveira Santos
+
+---
+
+## 📷 Imagem da Etapa 1 – Amazon S3
+
+### Bucket com arquivo de relatório:
+![Arquivo no bucket](./bucket-s3-arquivo.png)
