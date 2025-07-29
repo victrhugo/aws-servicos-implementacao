@@ -114,4 +114,41 @@ public class GerarRelatorioEstoque implements RequestHandler<Object, Map<String,
         return relatorio;
     }
 }
+```
+
+---
+
+## 📊 Etapa 3 – Monitoramento com Amazon CloudWatch
+
+O Amazon CloudWatch foi utilizado para monitorar a função Lambda responsável pela geração de relatórios de estoque.
+
+### Funcionalidades aplicadas:
+- Armazenamento automático de logs
+- Criação de métricas personalizadas (execuções, erros, duração)
+- Configuração de alarmes com notificação por e-mail
+
+Essa solução aumenta a visibilidade da operação e previne falhas em processos críticos da empresa, como controle de lotes e rastreabilidade de medicamentos.
+
+### Monitoramento de logs com CloudWatch
+
+Toda vez que a função `GerarRelatorioEstoque` é executada, o CloudWatch registra informações como:
+
+- Tempo de execução
+- Consumo de memória
+- Resultado da execução
+- Mensagens de erro (se houver)
+
+Isso permite que a equipe de TI monitore a estabilidade e identifique falhas em tempo real.
+
+### Alarme de falha configurado
+
+Foi criado um alarme no CloudWatch para monitorar falhas na função Lambda:
+
+- Condição: mais de 1 erro em 5 minutos
+- Ação: envio de e-mail para o responsável técnico
+
+Essa automação garante agilidade na resposta a erros e mantém os dados farmacêuticos sempre disponíveis e monitorados.
+
+
+
 
