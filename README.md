@@ -95,3 +95,23 @@ Victor Hugo de Oliveira Santos
 
 ### Bucket com arquivo de relatório:
 ![Arquivo no bucket](./bucket-s3-arquivo.png)
+
+---
+
+## ⚙️ Etapa 2 – AWS Lambda: Função em Java
+
+Para este projeto, simulamos a criação de uma função Lambda escrita em Java, utilizando a interface `RequestHandler`, que gera um relatório fictício de estoque.
+
+```java
+// Exemplo da função Lambda em Java
+public class GerarRelatorioEstoque implements RequestHandler<Object, Map<String, Object>> {
+    public Map<String, Object> handleRequest(Object input, Context context) {
+        Map<String, Object> relatorio = new HashMap<>();
+        relatorio.put("produto", "Paracetamol 500mg");
+        relatorio.put("quantidade", 2500);
+        relatorio.put("validade", "12/2026");
+        // ...
+        return relatorio;
+    }
+}
+
