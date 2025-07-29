@@ -2,7 +2,7 @@
 
 **Data:** 29/07/2025  
 **Empresa:** Abstergo Industries  
-**Responsável:** Erika Christina Rodrigues de Oliveira Sa
+**Responsável:** Victor Hugo de Oliveira Santos
 
 ---
 
